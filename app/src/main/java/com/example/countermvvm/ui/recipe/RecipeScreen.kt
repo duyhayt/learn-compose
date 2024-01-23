@@ -1,4 +1,4 @@
-package com.example.countermvvm.recipe
+package com.example.countermvvm.ui.recipe
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.Box
@@ -21,12 +21,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.rememberAsyncImagePainter
+import com.example.countermvvm.model.recipe.Category
 
 @Composable
 fun RecipeScreen(
     modifier: Modifier = Modifier.fillMaxSize()
 ) {
-    val recipeViewModel: MainViewModel = viewModel()
+    val recipeViewModel: RecipeViewModel = viewModel()
     val viewState by recipeViewModel.categoriesState
 
     Box(modifier = Modifier.fillMaxSize()) {

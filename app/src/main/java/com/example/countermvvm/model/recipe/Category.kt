@@ -1,4 +1,4 @@
-package com.example.countermvvm.recipe
+package com.example.countermvvm.model.recipe
 
 data class Category(
     val idCategory: String,
