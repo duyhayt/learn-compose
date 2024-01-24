@@ -1,17 +1,17 @@
-package com.example.countermvvm.recipe
+package com.example.countermvvm.data
 
+import com.example.countermvvm.domain.Environment
 import com.example.countermvvm.model.recipe.CategoriesResponse
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
 
-private val retrofit = Retrofit.Builder().baseUrl("https://www.themealdb.com/api/json/v1/1/")
+private val retrofit = Retrofit.Builder().baseUrl(Environment.BASE_URL)
     .addConverterFactory(GsonConverterFactory.create())
     .build()
 
 val recipeService = retrofit.create(ApiServices::class.java)
-
 
 
 interface ApiServices {

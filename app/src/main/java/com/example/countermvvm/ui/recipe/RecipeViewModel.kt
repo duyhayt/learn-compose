@@ -5,7 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.countermvvm.model.recipe.Category
-import com.example.countermvvm.recipe.recipeService
+import com.example.countermvvm.data.recipeService
 import kotlinx.coroutines.launch
 
 class RecipeViewModel : ViewModel() {
@@ -40,6 +40,4 @@ class RecipeViewModel : ViewModel() {
         val list: List<Category> = emptyList(),
         val error: String? = null
     )
-
-
 }
