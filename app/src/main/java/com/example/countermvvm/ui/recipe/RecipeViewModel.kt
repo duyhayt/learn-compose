@@ -5,7 +5,7 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.countermvvm.model.recipe.Category
-import com.example.countermvvm.data.recipeService
+import com.example.countermvvm.data.datasource.recipeService
 import kotlinx.coroutines.launch
 
 class RecipeViewModel : ViewModel() {

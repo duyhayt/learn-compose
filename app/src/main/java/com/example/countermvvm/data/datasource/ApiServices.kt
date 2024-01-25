@@ -1,4 +1,4 @@
-package com.example.countermvvm.data
+package com.example.countermvvm.data.datasource
 
 import com.example.countermvvm.domain.Environment
 import com.example.countermvvm.model.recipe.CategoriesResponse
