@@ -1,7 +1,8 @@
 package com.example.countermvvm.navigation
 
 sealed class NavigationScreen(val route: String) {
-    object RecipeScreen: NavigationScreen("recipescreen")
-    object DetailScreen: NavigationScreen("detailscreen")
-    object ListUserScreen: NavigationScreen("listUserScreen")
+    data object LoginScreen : NavigationScreen("login")
+    data object RecipeScreen : NavigationScreen("recipe")
+    data object DetailScreen : NavigationScreen("detail")
+    data object ListUserScreen : NavigationScreen("listUser")
 }

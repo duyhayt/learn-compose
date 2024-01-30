@@ -7,7 +7,6 @@ import androidx.lifecycle.viewModelScope
 import com.example.countermvvm.data.datasource.jsonPlaceholderService
 import com.example.countermvvm.model.user.User
 import kotlinx.coroutines.launch
-import retrofit2.Response
 
 class ListUserViewModel : ViewModel() {
     private val _listUserState = mutableStateOf(ListUserState())

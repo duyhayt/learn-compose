@@ -80,4 +80,9 @@ dependencies {
 
     implementation ("androidx.compose.material:material:1.0.0")
     implementation ("androidx.navigation:navigation-compose:2.4.0-alpha01")
+
+    //
+    implementation ("com.google.accompanist:accompanist-insets:0.23.1")
+    implementation ("com.google.android.exoplayer:exoplayer-core:2.17.1")
+    implementation ("com.google.android.exoplayer:exoplayer-ui:2.17.1")
 }

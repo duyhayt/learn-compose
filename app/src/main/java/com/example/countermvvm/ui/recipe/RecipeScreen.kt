@@ -36,23 +36,23 @@ import com.example.countermvvm.model.recipe.Category
 @Composable
 fun RecipeScreen(
     modifier: Modifier = Modifier,
-    viewState: RecipeViewModel.RecipeState,
     navigateToDetail: (Category) -> Unit
 ) {
+    val viewState: RecipeViewModel = viewModel()
     Box() {
         when {
-            viewState.loading -> {
+            viewState.categoriesState.value.loading -> {
                 CircularProgressIndicator(
                     modifier.align(Alignment.Center)
                 )
             }
 
-            viewState.error != null -> {
+            viewState.categoriesState.value.error != null -> {
                 Text(text = "ERROR OCCURRED")
             }
 
             else -> {
-                CategoryScreen(categories = viewState.list, navigateToDetail)
+                CategoryScreen(categories = viewState.categoriesState.value.list, navigateToDetail)
             }
         }
     }
